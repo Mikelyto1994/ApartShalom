@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <script src="https://kit.fontawesome.com/808781cc1c.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-nOmpvl6KlyVOy0iFt8Nl9uWjFegp/uyJ0yfnL6bG0nOYz+4JixfDn5BsGm7YYwN3lF7tXvF7vogC3O+hydv5hA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet"
+  />
+  <script
+    src="https://kit.fontawesome.com/0cde9e4ec5.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://kit.fontawesome.com/c9b87a4bee.js"
+    crossorigin="anonymous"
+  ></script>
+  <title>Apart Shalom &#128330</title>
+  <link rel="stylesheet" href="stylesPrueba.css">
+</head>
+<body>
+  <div class="container">
+    <div class="cabecera">
+      <div class="image-container">
+        <div class="video-container">
+          <div class="wrap t3-section   " id="Mod1304"  ><div class="container"><div class="section-header "><p class="container-sm module-intro">  <video autoplay loop muted poster="/images/home/2024/videos/peru.png" class="fillWidth">
+            <source src="https://www.decameron.com/media/360/video-home/peru/peru-febrero-home-video.mp4" type="video/mp4"/>
+            <source src="https://www.decameron.com/media/360/video-home/peru/peru-febrero-home-video.ogg" type="video/ogg"/>
+            <source src="https://www.decameron.com/media/360/video-home/peru/peru-febrero-home-video.webm" type="video/webm"/>
+          </video>
+        </div>
+      </div>
+    </div>
+    </div>
+      </div>
+    </div>
+     
+    <header id="navbar">
+      <a href="#"><i class="fa-solid fa-dove"></i></a>
+      <label for="check" class="checkbtn">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <nav class="menu">
+        <ul class="lista">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#seccion-1">Acerca de Apart Shalom</a></li>
+          <li><a href="#fechaBarra">Reserva tu depa</a></li>
+          <li><a href="#guiaTour">Guia turística</a></li>
+          <li><a href="#section-4">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="seccion-principal">
+      <div class="pruebaa" id="seccion-1">
+        <p class="pruebaaa">ppp</p>
+      </div>
+      <section class="seccion-1">
+        <div class="acerca-de">
+          <h2>Tu gran experiencia te espera en:<span id="animatedText"class="animate-text">Apart Shalom &#128330</span></h2>
+          <p>¡Bienvenido a nuestra página web! Estamos aquí para darte una cálida bienvenida y que tu estadía en Pisco, cuna de la bandera y puertas de la libertad, sea lo más cómoda posible.</p>
+          <div class="redes-sociales-menu">
+            <a target="_blank" href="https://www.airbnb.com.pe/users/show/160085417"
+              ><i class="fab fa-airbnb"></i
+            ></a>
+            <a target="_blank" href="https://www.booking.com/hotel/pe/shalom-apart.es.html"
+              ><img src="booking.png" class="booking"></a>
+            <a
+              target="_blank"
+              href=""
+              ><i class="fab fa-facebook"></i>
+            </a>
+            <a target="_blank" href=""
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              target="_blank"
+              href=""
+              ><i class="fab fa-tiktok"id="fechaBarra"></i
+            ></a>
+          </div>
+        </div>
+        <div class="acerca-imagen">
+          <img src="apartShalom.png" alt="sobre mi" />
+        </div>
+      </section>
+  <div class="fechaBarra" >
+    <div class="logo"><span>&#128330</span> Apart Shalom</div>
+    <div class="reserva-container">
+      <div class="input-group">
+        <label for="fecha-llegada">Fecha de Llegada:</label>
+        <input type="date" id="fecha-llegada">
+      </div>
+      <div class="input-group">
+        <label for="fecha-salida">Fecha de Salida:</label>
+        <input type="date" id="fecha-salida">
+      </div>
+      <div class="input-group">
+        <label>Cantidad de Personas:</label>
+        <div class="dropdown">
+          <button onclick="toggleDropdown()" class="dropbtn">Ingresar cantidad</button>
+          <div id="cantidadDropdown" class="dropdown-content">
+            <div class="input-group">
+              <label for="adultos">Adultos:</label>
+              <button class="btn-cantidad" onclick="restarCantidad('adultos')">-</button>
+              <input type="number" id="adultos" min="0" value="1" inputmode="numeric" class="sin-controles">
+              <button class="btn-cantidad" onclick="sumarCantidad('adultos')">+</button>
+            </div>
+            <div class="input-group">
+              <label for="ninos">Niños:</label>
+              <button class="btn-cantidad" onclick="restarCantidad('ninos')">-</button>
+              <input type="number" id="ninos" min="0" value="0" inputmode="numeric" class="sin-controles">
+              <button class="btn-cantidad" onclick="sumarCantidad('ninos')">+</button>
+            </div>
+            <div class="input-group">
+              <label for="bebes">Bebés:</label>
+              <button class="btn-cantidad" onclick="restarCantidad('bebes')">-</button>
+              <input type="number" id="bebes" min="0" value="0" inputmode="numeric" class="sin-controles">
+              <button class="btn-cantidad" onclick="sumarCantidad('bebes')">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn-reservar" onclick="mostrarOpcionesAlquiler()">Reservar</button>
+    </div>
+  </div>
+
+  <!-- Sección de opciones de alquiler -->
+  
+  <div id="opcionesAlquiler" class="opciones-container" style="display:none;">
+    <p id="mensaje"></p>
+    <div class="cards-container" id="cardsContainer">
+      <div class="card" data-personas="1-2">
+        <h3>Minidepartamento 1A</h3>
+        <div class="card-content">
+          <img src="depa1A.png" alt="" />
+          <div class="description">
+            <p> Habitación amoblado con una cama matrimonial, baño privado, Tv con cable, wifi, cochera. <br> Incluye: 01 mueble de sala, 1 comedor, cocina.<br>Área: 25 m2 / Aforo 2 personas.
+            </p>
+          </div>
+        </div>
+        <a href="#">Ver más</a>
+      </div>
+      <div class="card" data-personas="1-2">
+        <h3>Minidepartamento 1b</h3>
+        <div class="card-content">
+          <img src="depa1b.png" alt="" />
+          <div class="description">
+            <p>
+              Habitación amoblado con una cama matrimonial, baño privado, Tv con cable, wifi, cochera. <br>
+Incluye: 1 comedor, cocina. <br>
+Área: 20 m2 / Aforo 2 personas.
+            </p>
+          </div>
+        </div>
+        <a href="#">Ver más</a>
+      </div>
+      <div class="card" data-personas="2-4">
+        <h3>Departamento 02</h3>
+        <div class="card-content">
+          <img src="depa2.png" alt="" />
+          <div class="description">
+            <p>
+              Departamento con sala comedor, 2 habitaciones y dos baños, tv con cable, wifi, cochera <br>
+Incluye: 01 juego de sala, juego de comedor para 4, kitchen <br>
+Área: 60 m2 / Aforo 4 personas.
+            </p>
+          </div>
+          <a href="#">Ver más</a>
+        </div>
+      </div>
+      <div class="card" data-personas="2-5">
+        <h3>Departamento 04</h3>
+        <div class="card-content">
+          <img src="depa4.png" alt="" />
+          <div class="description">
+            <p>
+              Departamento con sala comedor, 2 habitaciones y dos baños, tv con cable, wifi, cochera <br>
+              Incluye: 01 juego de sala, juego de comedor para 4, kitchen <br>
+              Área: 60 m2 / Aforo 4 personas.
+            </p>
+          </div>
+          <a href="#">Ver más</a>
+        </div>
+      </div>
+      <div class="card" data-personas="2-5">
+        <h3>Departamento 05</h3>
+        <div class="card-content">
+          <img src="depa5.png" alt="" />
+          <div class="description">
+            <p>
+              Departamento con sala comedor, 2 habitaciones y dos baños, tv con cable, wifi, cochera <br>
+              Incluye: 01 juego de sala, juego de comedor para 4, kitchen <br>
+              Área: 60 m2 / Aforo 4 personas.
+            </p>
+          </div>
+          <a href="#">Ver más</a>
+        </div>
+      </div>
+      <div class="card" data-personas="3-7">
+        <h3>Departamento 06</h3>
+        <div class="card-content">
+          <img src="depa6.png" alt="" />
+          <div class="description">
+            <p>
+              Departamento con sala comedor, 3 habitaciones y dos baños, tv con cable, wifi, cochera <br>
+Incluye: 01 juego de sala, juego de comedor, kitchen <br>
+Área: 100 m2 / Aforo 7 personas.
+            </p>
+          </div>
+          <a href="#">Ver más</a>
+        </div>
+      </div>
+      <div class="card" data-personas="5-10" id="mayorCard">
+        <h3>Departamento 4to Piso</h3>
+        <div class="card-content">
+          <img src="foto1.png" alt="" />
+          <div class="description">
+            <p>
+              esto es una prueba muy natural, como lo ves yo muy bien y lalralralralralralralra que tal chavales, los amo
+            </p>
+          </div>
+          <a href="#">Ver más</a>
+        </div>
+      </div>
+      <!-- Puedes agregar más cards según tus necesidades -->
+    </div>
+  </div>
+  <section id="seccionTurismo" >
+    <div class="pruebaa" id="guiaTour"><p>pppp</p></div>
+    <div class="containerTurismo">
+      <h3 class="titulo">Aquí en Pisco, tenemos las siguientes diversiones:</h3>
+      <div class="cartas-container">
+        <!-- Ejemplo de una card -->
+        <div class="carta">
+          <img src="YakuPark.png" alt="Nombre de la imagen" class="Yaku-Park">
+          <h4>Yaku-Park</h4>
+          <p>Inflables en el chaco paracas, <br>diversión en familia garantizada.</p>
+          <a href="#">Ver más</a>
+        </div>
+        <div class="carta">
+          <img src="IslasBalletas.png" alt="Nombre de la imagen">
+          <h4>Islas Ballestas</h4>
+          <p>Espacio de la reserva de Paracas, <br> acoge miles de lobos marinos en <br>su habitat natural.</p>
+          <a href="#">Ver más</a>
+        </div>
+        <div class="carta">
+          <img src="dromedarius.png" alt="Nombre de la imagen">
+          <h4>Dromedarius</h4>
+          <p>Reserva natural de Dromedarius <br> tiene una inmensa piscina con juegos <br> rica comida y diferentes actividades <br> recreacionales para hacer.</p>
+          <a href="#">Ver más</a>
+        </div>
+        <div class="carta">
+          <img src="reservaparacas.png" alt="Nombre de la imagen">
+          <h4>Reserva Nacional Paracas</h4>
+          <p>Visita una de las 35 playas <br> protegidas por el ministerio de cultura <br> playas con agua cristalina y <br> fauna que está alrededor.</p>
+          <a href="#">Ver más</a>
+        </div>
+        <div class="carta">
+          <img src="huaytara.png" alt="Nombre de la imagen">
+          <h4>Huaytará</h4>
+          <p>A 02 hrs de Pisco rumbo al este <br> encontrarás vegetación abundante y <br> quebradas para conectarte con la <br> naturaleza.</p>
+          <a href="#">Ver más</a>
+        </div>
+        <div class="carta">
+          <img src="tamboColorado.png" alt="Nombre de la imagen">
+          <h4>Tambo Colorado</h4>
+          <p>Visita las ruinas del inca en<br>Tambo Colorado, que está a 1 hora <br> al este de Pisco. </p>
+          <a href="#">Ver más</a>
+        </div>
+        <!-- Repite esta estructura para cada card -->
+      </div>
+    </div>
+  </section>
+  </main>
+  <!-- Botón de WhatsApp -->
+  <div id="whatsapp">
+    <a href="https://api.whatsapp.com/send?phone=+51994675787&text=Hola,%20te%20escribo%20para%20poder%20alojarme%20en%20uno%20de%20los%20departamentos%20que%20ofrecen%20:)" target="_blank">
+      <img src="icons8-whatsapp.gif" alt="whatsapp">
+    </a>
+ </div> 
+ <div class="pruebaa">
+  <p>hoooooola</p>
+ </div>
+ <div class="linea-blanca"></div>
+
+  <footer>
+    <div class="mediaSocial" id="section-4">
+      <h3>Redes Sociales</h3>
+      <div class="redes-sociales">
+        <a target="_blank" href="https://www.airbnb.com.pe/users/show/160085417"
+              >Airbnb <i class="fab fa-airbnb"></i
+            ></a>
+            <a target="_blank" href="https://www.booking.com/hotel/pe/shalom-apart.es.html"
+              >Booking   <img src="booking.png" class="booking_footer"></a>
+            <a
+              target="_blank"
+              href=""
+              >Facebook<i class="fab fa-facebook"></i>
+            </a>
+            <a target="_blank" href=""
+              >Instagram<i class="fab fa-instagram"></i
+            ></a>
+            <a
+              target="_blank"
+              href=""
+              >TikTok<i class="fab fa-tiktok"></i
+            ></a>
+      </div>
+    </div>
+    <div class="mapa-contenedor">
+      <h3 class="titulo-mapa">Ubícanos en el google Maps:</h3>
+      <div class="mapa">
+      <!-- Aquí se mostrará el mapa -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d242.25239623915473!2d-76.2184620917694!3d-13.716127776724418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1711039885470!5m2!1ses-419!2spe" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+    
+    <div class="contactenos">
+      <h3>Contactenos</h3>
+      <p>Celular-whatsapp: 970959146</p>
+      <p>email corporativo: hostalshalom@gmail.com</p>
+    </div>
+  </footer>
+  <div class="logofinal">
+    <p><b>&copy; 2024 - Created by Miguel Pariona </b></p>
+  </div>
+  
+  <script src="scriptPrueba.js"></script>
+</body>
+</html>

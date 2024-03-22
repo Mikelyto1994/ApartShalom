@@ -1,0 +1,943 @@
+/* Estilos para el dropdown (ventana emergente) */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  color: blac;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content .input-group {
+  padding: 10px;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Estilos adicionales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.fechaBarra {
+  background-color: rgba(51, 51, 51, 0.1);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 5em;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.reserva-container {
+  display: flex;
+  gap: 0 5em;
+  align-items: center;
+}
+
+.input-group {
+  margin-right: 15px;
+  color: blacks;
+}
+
+.btn-cantidad {
+  margin: 0 5px;
+  display: inline;
+  width: 1.5em;
+  padding: 3px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+}
+
+#fecha-llegada, #fecha-salida{
+  margin: 5% 10%;
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+.dropdown{
+  display: block;
+  padding: 5% 0;
+  justify-content: center;
+  text-align: center;
+}
+
+#adultos, #ninos,#bebes{
+  position: relative;
+  width: 15%;
+}
+
+.sin-controles::-webkit-outer-spin-button,
+.sin-controles::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; /* Eliminar margen */
+}
+
+.btn-reservar {
+  margin: 0;
+  padding: 8px 15px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  font-size: 1.5em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* cards
+*/
+.opciones-container{
+  position: relative;
+  overflow: hidden;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap; /* Permitir que las tarjetas se ajusten automáticamente a la fila */
+  justify-content: center; /* Centrar las tarjetas horizontalmente */
+  gap: 1em; /* Espacio entre tarjetas */
+  overflow-x: auto; /* Permitir desplazamiento horizontal */
+  scroll-behavior: smooth; /* Desplazamiento suave */
+  width: 100%; /* Ancho completo */
+}
+
+/*cambioooosss */
+.cards-container::-webkit-scrollbar {
+  display: none; /* Ocultar barra de desplazamiento */
+}
+/* Estilos para las tarjetas */
+.card {
+  background-color: #ffffff;
+  color: black;
+  position: relative;
+  width: calc(40% - 1em); /* Ancho para cuatro tarjetas por fila */
+  margin: 0.5%; /* Espaciado entre las tarjetas */
+  padding: 0 1em;
+  border: 1px solid #FFD700;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgb(63, 62, 62);
+  transition: all 0.5s ease;
+  display: flex; /* Usamos flex para alinear elementos */
+  flex-direction: column; /* Alineación vertical de contenido */
+  height: 19em; /* Altura total */
+}
+.card h3 {
+  margin-bottom: 0.1em;
+}
+#mensaje{
+  font-size: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.card-content {
+  flex: 1; /* Ocupar espacio restante */
+  display: flex;
+  align-items: center; /* Centrar verticalmente */
+  line-height: 1.3;
+}
+.card img {
+  width: 50%;
+  border-radius: 10px;
+  margin-right: 1em; /* Espacio entre imagen y texto */
+}
+
+
+.card .description {
+  flex: 1; /* El texto ocupa el espacio restante */
+  color: black;
+  text-align: justify;
+  overflow: hidden; /* Ocultar el desbordamiento del texto */
+}
+.card img:hover{
+  scale: 1.05;
+  transition: all 0.5s ease;
+}
+.card-description{
+  margin-bottom: 10px;
+  gap: 10px;
+  
+}
+.card a {
+  position: absolute; /* Establecer posición absoluta para posicionar el botón */
+  bottom: 10px; /* Colocar el botón 10px desde la parte inferior */
+  right: 10px; /* Colocar el botón 10px desde el borde derecho */
+  padding: 8px 16px; /* Agregar padding al botón para que tenga un tamaño adecuado */
+  background-color: #FFD700; /* Color de fondo del botón */
+  color: #000; /* Color del texto del botón */
+  border-radius: 4px; /* Agregar bordes redondeados al botón */
+  text-decoration: none; /* Eliminar subrayado del enlace */
+  transition: background-color 0.3s ease; /* Agregar transición suave al color de fondo */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+* {
+   box-sizing: border-box;
+}
+
+/* Estilos para las cartas */
+.containerTurismo{
+  overflow: hidden; /* Oculta el contenido que excede el contenedor */
+      width: 100%;
+      margin: 0 auto;
+}
+.carta {
+  background-color: rgb(70, 42, 23);
+  flex: 0 0 24%;
+  max-width: 24%;
+  width: 24%;
+  height: 50%;
+  margin: 0 0.5%;
+  padding: 1em;
+  border: 1px solid #FFD700;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgb(63, 62, 62);
+  transition: transform 0.5s ease;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+.carta img {
+  width: 90%; /* Limitar el ancho de la imagen al 50% de la carta */
+  height: 160px; /* Mantener la relación de aspecto */
+}
+
+.cartas-container {
+  display: flex;
+  white-space: nowrap;
+  list-style-type: none;
+  padding: 0;
+  transition: transform 0.5s ease-in-out;
+
+}
+/* Estilos para los botones de navegación */
+.nav-buttons {
+  margin-top: 10px;
+  text-align: center;
+}
+.video-container {
+  width: 100%; /* Ancho total del contenedor */
+  max-width: 100%; /* Ancho máximo del contenedor */
+  overflow: hidden; /* Ocultar el contenido extra */
+}
+
+video {
+  width: 100%; /* Ancho del video al 100% del contenedor */
+  height: auto; /* Altura ajustada automáticamente para mantener la proporción */
+}
+/* Video */
+#Mod1304 .module-intro {
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+.module-intro > video.fillWidth {
+  position:absolute;
+  width: 100%;
+}
+.prev-btn,
+.next-btn {
+  font-size: 16px;
+  padding: 8px 16px;
+  background-color: #FFD700;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: #f0c419; /* Cambiar color al pasar el mouse */
+}
+/* Estilos para los botones de navegación en cualquier sección */
+.nav-btn {
+  font-size: 16px;
+  padding: 8px 16px;
+  background-color: #FFD700;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #f0c419; /* Cambiar color al pasar el mouse */
+}
+.pruebaa{
+  color: transparent;
+}
+#guiaTour{
+  font-size: 40px;
+}
+/* desing body */
+
+body {
+    background: linear-gradient(50deg, rgb(243, 144, 86) 50%, rgb(241, 238, 219) 85%);
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: rgb(236, 241, 245);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.containerTurismo{
+  overflow: hidden; /* Oculta el contenido que excede el contenedor */
+      width: 100%;
+      margin: 0 auto;
+}
+.barraconsultaalquilerr{
+    height: 20em;
+    width: 100%;
+}
+.cabecera{
+    width: 100%; /* Ancho inicial de la imagen */
+    height: 35em; /* Altura automática para mantener la proporción */
+    position: relative;
+    background-color: rgb(70, 42, 23);
+    top: 20%; 
+}
+
+.image-container {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    height: 95vh;
+    overflow: hidden;
+  }
+  
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .image.visible {
+    opacity: 1;
+  }
+  
+
+
+/* header */
+header{
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+    position: fixed;
+    z-index: 1000;
+    /* top: 0; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5% 10%;
+    /* border-bottom: white 2px solid; */
+}
+.menu .lista{
+    display: flex;
+    gap: 1.1em;
+}
+header a i{
+    cursor: pointer;
+    /* background-color: #FFD700; */
+    padding: 8px 5px;
+    width: 100%;
+    border-radius: 20%;
+    border: 2px solid white;
+}
+a i{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+a :hover{
+    color: #FFD700;
+    scale: 1.3;
+
+}
+
+.lista a{
+    text-decoration: none;
+    color: white;
+    
+    padding: 8px;
+    border-radius: 5px;
+}
+.lista a:hover{
+    background-color: #FFD700;
+    color: black;
+    transition: all 0.5s ease;
+}
+li{
+    list-style: none;
+}
+
+/* seccion principal */
+
+#seccion-principal{
+    padding: 0 4%;
+    margin-top: 80px;
+    width: 100%;
+}
+.seccion-1{
+    display: flex;
+    justify-content: space-between;
+    gap: 5em;
+    align-items: center;
+    height: 75vh;
+}
+.acerca-imagen img{
+    width: 300px;
+    height: 400px;
+    border: white 3px solid;
+    border-radius: 50%;
+    background-color: #FFD700;
+    transition: all 0.5s ease;
+}
+.acerca-imagen img:hover{
+    transform:scale(1.1);
+    /* background-color: #072946; */
+    border-radius: 50%;
+    
+}
+.acerca-de{
+  padding-left: 10%;
+  width: 60%;
+}
+.acerca-de h2{
+    font-size: 45px;
+}
+.booking{
+  position: relative;
+  top: -5px;
+  height: 65px;
+}
+.booking:hover{
+  filter: brightness(2) sepia(100%) saturate(5000%);
+}
+.logo{
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.logo span{
+  font-size: 50px;
+}
+.booking_footer{
+  position: relative;
+  top: -5px;
+  height: 30px;
+}
+.booking_footer:hover{
+  filter: brightness(2) sepia(100%) saturate(5000%);
+}
+
+.acerca-de h2 span {
+  color: rgb(70, 42, 23);
+  font-size: 60px;
+  display: block;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 15ch;
+  overflow: hidden;
+}
+
+/* Clase para animar el texto */
+.animate-text {
+  animation: type 2s steps(15), blink-caret .5s infinite step-end alternate;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+.acerca-de p{
+    font-size: 20px;
+    text-justify: justify;
+}
+.acerca-de p a{
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.redes-sociales-menu{
+    margin-top: 30px;
+    display: flex;
+    gap: 6em;
+    /* justify-content: center; */
+}
+.redes-sociales-menu i{
+  font-size: 50px;
+}
+.seccion-2{
+    text-align: center;
+}
+/* card design */
+
+
+/* seccion 3 */
+.section-3 {
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+.section-3 h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.barraConsultaAlquile{
+    width: 100%;
+  height: 100%; /* Ocupar todo el alto disponible */
+  border: none; /* Quitar borde si no es necesario */
+}
+
+
+
+/* footer */
+.redes-sociales{
+    display: inline;
+    padding-left: 20px;
+    gap: 2em;
+}
+.redes-sociales a{
+  color: inherit; /* Hereda el color del texto del elemento padre */
+  text-decoration: none; /* Quita el subrayado */
+  display: flex; /* Usar flexbox para alinear elementos */
+  font-size: 1.2em;
+  gap: 2em;
+  align-items: center; /* Centrar verticalmente */
+  justify-content: center; /* Centrar horizontalmente */
+  text-decoration: none; /* Quitar subrayado de los enlaces */
+  margin-bottom: 10px; /* Agregar espacio inferior entre elementos */
+}
+.redes-sociales a i {
+  font-size: 24px;
+}
+
+
+.redes-sociales a:hover{
+    /* background-color: #FFD700; */
+    /* color: black; */
+    border-color: #FFD700;
+    color: #FFD700;
+    transition: all 0.5s ease;
+}
+.mapa{
+  box-shadow: 0 0 20px rgb(63, 62, 62);
+  border-radius: 10px;
+}
+
+.mapa-contenedor {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center; /* Centrar horizontalmente */
+  justify-content: center; /* Centrar verticalmente */
+  height: 50vh; /* Altura completa de la pantalla, ajusta según necesites */
+}
+.titulo-mapa {
+  margin-bottom: 20px; /* Espacio entre el título y el mapa */
+}
+.titulo{
+  display: flex;
+  justify-content: center;
+}
+.linea-blanca {
+  height: 15px; /* Altura de la línea */
+  border-radius: 200px;
+  background-color: #fff; /* Color de la línea (blanco en este caso) */
+  margin-bottom: 50px; /* Espacio debajo de la línea */
+}
+footer {
+  display: flex;
+  justify-content: space-around; /* Distribuir el espacio de forma uniforme */
+  align-items: center; /* Centrar verticalmente los elementos */
+  padding:  0; /* Añadir espaciado interno */
+  flex-wrap: wrap; /* Permitir el ajuste de elementos en varias líneas si es necesario */
+}
+.mediaSocial,
+.mapa-contenedor,
+.contactenos {
+  flex: 1; /* Permitir que los elementos ocupen el espacio disponible */
+  margin: 0; /* Agregar margen entre los elementos */
+  padding-left: 20px;
+}
+.contactenos{
+  padding-left: 90px;
+}
+.mediaSocial h3{
+  padding-left: 50px;
+}
+.logofinal{
+  width: 1250px;
+  position: inline;
+  font-size: 1.5em;
+}
+.logofinal b{
+  padding: 20px 0 10px 80px;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  /* align-items: center; */ /* Comentar esta línea para no centrar verticalmente */
+
+  color: white;
+}
+/* footer p{
+    color: black;
+    background-color: #FFD700;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: auto;
+} */
+.checkbtn{
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Contactos */
+.section-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    text-align: center;
+    /* background-color: #f6f7f8; */
+    /* border: 1px solid #d6d9dc; */
+    border-radius: 3px;
+  
+    width: 80%;
+    margin: 50px auto;
+    padding: 50px;
+}
+
+.section-4 h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #FFD700;
+  }
+
+  
+  /* ------------- Formulario ------------- */
+  
+  .formulario {
+    /* background-color: #f6f7f8; */
+    border: 1px solid #FFD700;
+    border-radius: 3px;
+    box-shadow: #bdbdbd 0px 0px 10px;
+    width: 400px;
+    padding: 30px;
+    /* margin: 30px 0 40px 0; */
+  }
+  /* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .form-row input[type="text"]{
+    /* background-color: #bdbdbd; */
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  .form-row input[type="email"] {
+    /* background-color: #bdbdbd; */
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  
+  .form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+  }
+
+  .form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+  
+  
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+  
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+  
+    width: 100%;
+  }
+
+  .form-row button {
+    font-size: 16px;
+    font-weight: bold;
+  
+  
+    color: #ffffff;
+    background-color: #5995da;
+  
+  
+    border: none;
+    border-radius: 3px;
+  
+  
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+  
+  
+  .form-row button:hover {
+    background-color: #76aeed;
+  }
+  
+  
+  .form-row button:active {
+    background-color: #407fc7;
+  }
+#whatsapp {
+  pointer-events: auto; /* Habilitar eventos de puntero */
+  transition: none; /* Eliminar cualquier transición */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 80px; /* Ancho del botón */
+    height: 80px; /* Altura del botón */
+}
+
+/* Estilos para el círculo del botón de WhatsApp */
+#whatsapp circle {
+    fill: #25d366; /* Color del círculo */
+    transition: none
+}
+
+/* Estilos para el icono dentro del botón */
+#whatsapp path {
+    fill: #fff; /* Color del icono */
+    transition: none
+  }
+
+
+/* responsivo */
+@media only screen and (max-width: 768px) {
+  /* Ajustes para la barra de navegación */
+  header {
+    height: 60px; /* Altura mínima para la barra de navegación en dispositivos móviles */
+    padding: 0 20px; /* Espaciado interno */
+  }
+
+  .menu {
+    display: none; /* Ocultar el menú principal en dispositivos móviles */
+  }
+
+  .checkbtn {
+    display: block; /* Mostrar el botón de menú en dispositivos móviles */
+  }
+
+  /* Alinear el texto del logotipo en dispositivos móviles */
+  .logo {
+    text-align: center;
+  }
+
+  /* Estilos para los íconos en dispositivos móviles */
+  header a i {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px){
+    
+    header{
+        background-color: #091A28;
+        height: 94px;
+        border-bottom: white 1px solid;
+    } 
+    .checkbtn{
+        display: block;
+    }
+    .menu{
+        height: 0vh;
+        position: absolute;
+        top: 94px;
+        left: 0;
+        width: 100%;
+        background: #091A28;
+        text-align: center;
+        transition: all 0.7s;
+        overflow: hidden;
+    }
+     
+      .menu li{
+        display: block;
+        margin-top: 60px;
+        
+    }
+    .lista li a{
+        font-size: 20px;
+    }  
+    .menu ul.lista {
+        /* float: none; */
+        display: block;
+        width: 174px;
+        margin: 0 auto;
+        opacity: 0;
+        margin-top: 30px;
+      }
+    
+      .menu ul.lista li a:hover {
+        color: #000;
+      }
+      /* ACTIVE */
+      .menu.active {
+        height: 100vh;
+      }
+    
+      .menu.active ul.lista {
+        opacity: 1;
+      }
+
+
+
+
+    .seccion-1{
+        flex-direction: column;
+        gap: 2em;
+        height: auto;
+    }
+    .acerca-imagen img{
+        width: 300px;
+        height: 300px;
+    }
+    .acerca-de h2{
+        font-size: 20px;
+    }
+    .acerca-de p{
+        font-size: 16px;
+    }
+    .redes-sociales-menu{
+        margin-top: 20px;
+    }
+     .card-content{
+        grid-template-columns: repeat(
+            auto-fit, 
+            minmax(300px, 1fr));
+    }
+    .card-description a{
+        padding: 5px;
+    }
+    .redes-sociales a{
+        width: 40px;
+        height: 40px;
+    }
+    .redes-sociales a i{
+        font-size: 20px;
+    }
+    .redes-sociales a:hover{
+        border-color: #FFD700;
+        color: #FFD700;
+        transition: all 0.5s ease;
+    }
+    footer{
+        padding: 20px 0;
+    }
+
+    /* contactos */
+
+    .section-4 {
+        padding: 50px;
+      }
+    .formulario{
+        width: 300px;
+        padding: 20px;
+    }
+      .form-row {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 20px;
+      }
+      .form-row input[type="text"] {
+        width: 250px;
+        height: initial;
+      }
+      .form-row label {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+        text-align: start;
+      }
+      .form-row textarea {
+          width: 250px;
+        }
+        .form-row button {
+          margin-left: 120px;
+          width: 100%;
+        }    
+}
